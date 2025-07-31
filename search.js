@@ -1,4 +1,22 @@
-// استخراج الكلمة المفتاحية من الرابط
+window.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialQuery = urlParams.get("query");
+
+  if (initialQuery) {
+    searchBox.value = initialQuery;
+
+    // انتظر تحميل الكتب ثم نفذ البحث
+    const trySearch = () => {
+      if (typeof books !== "undefined" && books.length > 0) {
+        searchBox.dispatchEvent(new Event("input"));
+      } else {
+        setTimeout(trySearch, 100); // أعد المحاولة بعد 100ms
+      }
+    };
+
+    trySearch();
+  }
+});// استخراج الكلمة المفتاحية من الرابط
 const urlParams = new URLSearchParams(window.location.search);
 const initialQuery = urlParams.get("query");
 
