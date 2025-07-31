@@ -1,4 +1,12 @@
+// استخراج الكلمة المفتاحية من الرابط
+const urlParams = new URLSearchParams(window.location.search);
+const initialQuery = urlParams.get("query");
 
+if (initialQuery) {
+  searchBox.value = initialQuery;
+  const inputEvent = new Event("input");
+  searchBox.dispatchEvent(inputEvent);
+}
     const books = [
       {
         title: "الأعداد الخاصة",
