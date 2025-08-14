@@ -4,7 +4,7 @@
     title: "المغامرة",
     author: "نبيل فاروق",
     description: "رواية بوليسية شيقة مليئة بالغموض والتشويق.",
-    img: "https://tse1.mm.bing.net/th/id/OIP.U2WySt-x4RmVcfuQ2H7OTAAAAA?rs=1&pid=ImgDetMain",
+    img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1580947252i/51008637.jpg",
     pdf: "المغامرة.pdf"
   },
   {
@@ -163,3 +163,4 @@
     pdf: "الذين عادوا إلى السماء.pdf"
   }
     ];
+
